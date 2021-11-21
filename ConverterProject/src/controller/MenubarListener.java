@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
+import model.ValueToConvert;
 import view.CentimetersConversionArea;
 import view.ConverterPanel;
 
@@ -30,10 +31,11 @@ public class MenubarListener implements ActionListener {
 				converterPanel.getCentiBox().setText("");
 				JOptionPane.showMessageDialog(null, "The value is negative. Try again.");
 				return;
-			}//If the input is negative, throw exception. 
-			
-			
-			System.out.println(Double.parseDouble(inputText));
+				//If the input is negative, throw exception.
+			} else {
+				ValueToConvert model = converterPanel.getValueToConvert();
+				model.setValues(Double.parseDouble(inputText));
+			}
 		}
 	}
 }

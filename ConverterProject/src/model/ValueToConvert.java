@@ -1,8 +1,23 @@
 package model;
 
+import java.util.ArrayList;
+
 public class ValueToConvert {
-	private double centiValue;
+	private Double centiValue;
+	private ArrayList<Observer> observers;
 	public ValueToConvert() {
-		
+		observers = new ArrayList<>();
+	}
+	public void setValues(double centi) {
+		centiValue = centi;
+		notyfyAllObservers();
+	}
+	public void addObserver(Observer o) {
+		observers.add(o);
+	}
+	public void notyfyAllObservers() {
+		for(Observer o: observers) {
+			o.update(centiValue);
+		}
 	}
 }
