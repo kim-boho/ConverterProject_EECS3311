@@ -1,4 +1,7 @@
-package model;
+package model.observer;
+
+import model.ValueToConvert;
+import model.command.Command;
 
 public abstract class Observer {
 	protected ValueToConvert model;

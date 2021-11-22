@@ -2,6 +2,8 @@ package model;
 
 import java.util.ArrayList;
 
+import model.observer.Observer;
+
 public class ValueToConvert {
 	private Double centiValue;
 	private ArrayList<Observer> observers;

@@ -1,4 +1,7 @@
-package model;
+package model.observer;
+
+import model.ValueToConvert;
+import model.command.SetFeetCommand;
 
 public class FeetObserver extends Observer{
 	private double ftValue;

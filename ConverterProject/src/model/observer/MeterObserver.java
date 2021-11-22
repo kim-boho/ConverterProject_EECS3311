@@ -1,4 +1,7 @@
-package model;
+package model.observer;
+
+import model.ValueToConvert;
+import model.command.SetMeterCommand;
 
 public class MeterObserver extends Observer{
 	private double meterValue;

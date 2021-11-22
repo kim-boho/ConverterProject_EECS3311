@@ -2,9 +2,10 @@ package view;
 
 import java.awt.Color;
 import javax.swing.JPanel;
-import model.FeetObserver;
-import model.MeterObserver;
+
 import model.ValueToConvert;
+import model.observer.FeetObserver;
+import model.observer.MeterObserver;
 
 @SuppressWarnings("serial")
 public class ConverterPanel extends JPanel{
