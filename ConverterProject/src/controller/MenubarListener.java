@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 import model.ValueToConvert;
-import view.CentimetersConversionArea;
 import view.ConverterPanel;
 
 public class MenubarListener implements ActionListener {
