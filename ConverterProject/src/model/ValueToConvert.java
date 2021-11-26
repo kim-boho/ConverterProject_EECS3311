@@ -12,12 +12,12 @@ public class ValueToConvert {
 	}
 	public void setValues(double centi) {
 		centiValue = centi;
-		notyfyAllObservers();
+		notifyAllObservers();
 	}
 	public void addObserver(Observer o) {
 		observers.add(o);
 	}
-	public void notyfyAllObservers() {
+	public void notifyAllObservers() {
 		for(Observer o: observers) {
 			o.update(centiValue);
 		}
