@@ -7,6 +7,11 @@ import model.ValueToConvert;
 import model.observer.FeetObserver;
 import model.observer.MeterObserver;
 
+/**
+ * Thic class creates the main panel for user interface.
+ * @author Boho Kim
+ *
+ */
 @SuppressWarnings("serial")
 public class ConverterPanel extends JPanel{
 	
@@ -16,6 +21,9 @@ public class ConverterPanel extends JPanel{
 	
 	private static ValueToConvert model;
 	
+	/**
+	 * Constructor to create main panel consisting of text areas for value.
+	 */
 	public ConverterPanel() {
 		super(null);
 		super.setBackground(Color.white);
@@ -33,19 +41,34 @@ public class ConverterPanel extends JPanel{
 		setVisible(true);
 	}
 	
-	
+	/**
+	 * This method is getter for text area object to receive centimeter value.
+	 * @return CentimetersConversionArea text area object to receive centimeter value.
+	 */
 	public CentimetersConversionArea getCentiBox() {
 		return centiBox;
 	}
 	
+	/**
+	 *  This method is getter for ValueToConvert object which is main logic part of application.
+	 * @return ValueToConvert object.
+	 */
 	public ValueToConvert getValueToConvert() {
 		return model;
 	}
 	
+	/**
+	 * This method is getter for text area object to display feet value.
+	 * @return FeetConversionArea text area object to display feet value.
+	 */
 	public FeetConversionArea getFeetBox() {
 		return feetBox;
 	}
 	
+	/**
+	 * This method is getter for text area object to display meter value.
+	 * @return MeterConversionArea text area object to display meter value.
+	 */
 	public MeterConversionArea getMeterBox() {
 		return meterBox;
 	}

@@ -10,6 +10,9 @@ import model.command.SetMeterCommand;
 public class MeterObserver extends Observer{
 	private double meterValue;
 	
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void update(double centiValue) {
 		// TODO Auto-generated method stub

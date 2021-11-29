@@ -10,7 +10,9 @@ import model.command.SetFeetCommand;
 public class FeetObserver extends Observer{
 	private double ftValue;
 	
-	
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void update(double centiValue) {
 		// TODO Auto-generated method stub
