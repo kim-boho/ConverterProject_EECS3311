@@ -20,8 +20,8 @@ public class ConverterPanel extends JPanel{
 		super(null);
 		super.setBackground(Color.white);
 		model = new ValueToConvert();
-		model.addObserver(new FeetObserver(model));
-		model.addObserver(new MeterObserver(model));
+		model.addObserver(new FeetObserver());
+		model.addObserver(new MeterObserver());
 		centiBox = new CentimetersConversionArea();
 		meterBox = new MeterConversionArea().getMeterBox();
 		feetBox = new FeetConversionArea().getFeetBox();
@@ -32,6 +32,7 @@ public class ConverterPanel extends JPanel{
 		add(feetBox);
 		setVisible(true);
 	}
+	
 	
 	public CentimetersConversionArea getCentiBox() {
 		return centiBox;

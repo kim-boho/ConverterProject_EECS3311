@@ -1,14 +1,14 @@
 package model.observer;
 
-import model.ValueToConvert;
 import model.command.SetMeterCommand;
 
+/**
+ * This class observes centimeter value and, when it is updated, commands to set the changed value meter value.
+ * @author Boho Kim
+ *
+ */
 public class MeterObserver extends Observer{
 	private double meterValue;
-	public MeterObserver(ValueToConvert model) {
-		// TODO Auto-generated constructor stub
-		super.model = model;
-	}
 	
 	@Override
 	public void update(double centiValue) {

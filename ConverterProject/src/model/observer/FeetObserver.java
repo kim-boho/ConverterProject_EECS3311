@@ -1,14 +1,15 @@
 package model.observer;
 
-import model.ValueToConvert;
 import model.command.SetFeetCommand;
 
+/**
+ * This class observes centimeter value and, when it is updated, commands to set the changed feet value.
+ * @author Boho Kim
+ * 
+ */
 public class FeetObserver extends Observer{
 	private double ftValue;
-	public FeetObserver(ValueToConvert model) {
-		// TODO Auto-generated constructor stub
-		super.model = model;
-	}
+	
 	
 	@Override
 	public void update(double centiValue) {

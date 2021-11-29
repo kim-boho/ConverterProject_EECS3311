@@ -8,12 +8,28 @@ import javax.swing.JOptionPane;
 import model.ValueToConvert;
 import view.ConverterPanel;
 
+
+/**
+ * This class receives keyboard input from user.
+ * @author Boho Kim
+ *
+ */
 public class MenubarListener implements ActionListener {
+	
 	private final ConverterPanel converterPanel;
+	
+	/**
+	 * Constructor to create object
+	 * @param panel is main project panel
+	 */
 	public MenubarListener(ConverterPanel panel) {
 		converterPanel = panel;
 	}
 	
+
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("SAVE")) {
@@ -31,6 +47,7 @@ public class MenubarListener implements ActionListener {
 				JOptionPane.showMessageDialog(null, "The value is negative. Try again.");
 				return;
 				//If the input is negative, throw exception.
+				
 			} else {
 				ValueToConvert model = converterPanel.getValueToConvert();
 				model.setValues(Double.parseDouble(inputText));

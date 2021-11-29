@@ -6,7 +6,17 @@ import view.ConverterMenuBar;
 import view.ConverterPanel;
 
 
+/**
+ * This class runs main application.
+ * @author Boho Kim
+ *
+ */
 public class ConverterApp {
+	
+	/**
+	 * Main method to run application
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		JFrame converterFrame = new JFrame("Converter");
 		ConverterPanel converterPanel = new ConverterPanel();
