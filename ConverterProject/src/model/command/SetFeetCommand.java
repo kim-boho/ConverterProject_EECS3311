@@ -11,6 +11,7 @@ public class SetFeetCommand implements Command{
 	
 	/**
 	 * {@inheritDoc}
+	 * @pre ftValue >= 0.
 	 */
 	@Override
 	public void setValue(double ftValue) {

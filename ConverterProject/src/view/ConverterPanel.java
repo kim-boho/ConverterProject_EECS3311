@@ -10,7 +10,7 @@ import model.observer.MeterObserver;
 /**
  * Thic class creates the main panel for user interface.
  * @author Boho Kim
- *
+ * @invariant 
  */
 @SuppressWarnings("serial")
 public class ConverterPanel extends JPanel{

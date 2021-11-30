@@ -13,6 +13,7 @@ public abstract class Observer {
 	/**
 	 * This method converts the value and updates it using command class.
 	 * @param value centimeter value
+	 * @pre centiValue >= 0.
 	 */
 	public abstract void update(double centiValue);
 }

@@ -10,6 +10,7 @@ public interface Command {
 	/**
 	 * This method receives value and set it on panel.
 	 * @param value
+	 * @pre value >= 0
 	 */
 	public void setValue(double value);
 }

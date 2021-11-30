@@ -6,7 +6,7 @@ import javax.swing.JTextArea;
 /**
  * This class is for text area interface to display meter value to user. 
  * @author Boho Kim
- *
+ * @invariant meterBox is never null.
  */
 @SuppressWarnings("serial")
 public class MeterConversionArea extends JTextArea{
@@ -26,6 +26,7 @@ public class MeterConversionArea extends JTextArea{
 	/**
 	 * This method is getter for static meter text area object.
 	 * @return MeterConversionArea meter text area.
+	 * @post return object is not null.
 	 */
 	public MeterConversionArea getMeterBox() {
 		return meterBox;

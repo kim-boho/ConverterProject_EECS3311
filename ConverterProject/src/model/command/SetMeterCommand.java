@@ -11,6 +11,7 @@ public class SetMeterCommand implements Command{
 	
 	/**
 	 * {@inheritDoc}
+	 * @pre meterValue >= 0.
 	 */
 	@Override
 	public void setValue(double meterValue) {

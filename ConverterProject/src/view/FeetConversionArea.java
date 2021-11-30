@@ -6,6 +6,7 @@ import javax.swing.JTextArea;
 /**
  * This class is for text area interface to display feet value to user. 
  * @author Boho Kim
+ * @invariant feetBox is never null.
  *
  */
 @SuppressWarnings("serial")
@@ -26,6 +27,7 @@ public class FeetConversionArea extends JTextArea{
 	/**
 	 * This method is getter for static feet text area object.
 	 * @return FeetConversionArea feet text area.
+	 * @post return object is not null.
 	 */
 	public FeetConversionArea getFeetBox() {
 		return feetBox;

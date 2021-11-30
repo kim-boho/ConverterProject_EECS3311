@@ -12,7 +12,7 @@ import view.ConverterPanel;
 /**
  * This class receives keyboard input from user.
  * @author Boho Kim
- * @invariant 
+ * 
  */
 public class MenubarListener implements ActionListener {
 	
@@ -29,6 +29,7 @@ public class MenubarListener implements ActionListener {
 
 	/**
 	 * {@inheritDoc}
+	 * @pre ActionEvet defined in this project is only "SAVE".
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
