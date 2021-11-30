@@ -12,11 +12,11 @@ import view.ConverterPanel;
 /**
  * This class receives keyboard input from user.
  * @author Boho Kim
- *
+ * @invariant 
  */
 public class MenubarListener implements ActionListener {
 	
-	private final ConverterPanel converterPanel;
+	private ConverterPanel converterPanel;
 	
 	/**
 	 * Constructor to create object
