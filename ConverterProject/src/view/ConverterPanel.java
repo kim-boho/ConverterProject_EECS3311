@@ -8,9 +8,9 @@ import model.observer.FeetObserver;
 import model.observer.MeterObserver;
 
 /**
- * Thic class creates the main panel for user interface.
+ * This class creates the main panel for user interface.
  * @author Boho Kim
- * @invariant 
+ * @invariant ConverterPanel contains text areas for centimeter, feet and meter, and a model to convert received value.
  */
 @SuppressWarnings("serial")
 public class ConverterPanel extends JPanel{

@@ -9,7 +9,7 @@ import model.observer.Observer;
 /**
  * This class gets centimeter value from view and notifies the value to observer classes.
  * @author Boho Kim
- * @invariant centiValue(centimeter value) >= 0
+ *
  */
 public class ValueToConvert {
 	private Double centiValue;
@@ -26,6 +26,7 @@ public class ValueToConvert {
 	 * This method receive centimeter value to convert and notify to observers.
 	 * @param centi centimeter value to convert.
 	 * @pre centi >= 0
+	 * @post centiValue = centi
 	 */
 	public void setValues(double centi) {
 		centiValue = centi;
